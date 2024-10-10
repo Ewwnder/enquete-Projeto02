@@ -30,6 +30,7 @@
             font-size: 28px;
             font-weight: bold;
             color: #DEBC23;
+            margin-bottom: 18px;
         }
 
         .description div {
@@ -39,7 +40,7 @@
         }
 
         .form-title {
-            font-size: 20px;
+            font-size: 25px;
             margin-top: 20px;
             background: linear-gradient(to bottom, #591C63, #1F0D22);
             padding: 10px;
@@ -49,9 +50,15 @@
         .input {
             width: 80%;
             padding: 10px;  
-            margin: 10px 0;
+            margin-top: 20px;
+            margin-bottom: 5px;
             border-radius: 5px;
-            border: none;
+            border: none;   
+        }
+
+        input:focus {
+            outline: none;
+            box-shadow: 0 0 10px #2b0d30;
         }
 
         .options {
@@ -61,34 +68,47 @@
         }
 
         .option {
-            background-color: #1a2c80; 
-            padding: 20px;
+            background: linear-gradient(to bottom, #2638DB, #342A89);
+            padding: 10px;
             border-radius: 10px;
             width: 25%;
             text-align: center;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
 
-        .option h3 {
+        .inner-option {
             background: linear-gradient(to bottom, #4065EF, #71C9FE);
+            padding: 5px;
+        }
+
+        .inner-option h3 {
             color: #fff;
-            font-size: 24px;
-            margin-bottom: 10px;
-            border-radius: 5px;
+            font-size: 22px;
+            margin-bottom: 0px;
+        }
+
+        object {
+            width: 120px;
+            height: 120px;
+            margin: 10px 0;
         }
 
         button {
             background-color: #1D0C20;
             color: #fff;
-            padding: 15px;
+            padding: 15px 30px;
             border: none;
             border-radius: 5px;
             cursor: pointer;
-            margin-top: 15px;
+            margin-top: 10px;
+        }
+
+        button:hover{
+            background-color: #2e2430;
         }
 
         .footer {
-            margin-top: 20px;
+            margin-top: 10px;
             font-size: 12px;
             color: #FFF;
         }
@@ -124,24 +144,33 @@
 
             <div class="options">
                 <div class="option">
-                    <h3>Esportes</h3>
-                    <button>Votar</button>
+                    <div class="inner-option">
+                        <h3>Esportes</h3>
+                        <object data="sports_soccer_white.svg" type="image/svg+xml"></object>
+                        <button>Votar</button>
+                    </div>
                 </div>
 
                 <div class="option">
-                    <h3>Simulação</h3>
-                    <button>Votar</button>
+                    <div class="inner-option">
+                        <h3>Simulação</h3>
+                        <object data="local_airport_white.svg" type="image/svg+xml"></object>
+                        <button>Votar</button>
+                    </div>
                 </div>
 
                 <div class="option">
-                    <h3>Estratégia</h3>
-                    <button>Votar</button>
+                    <div class="inner-option">
+                        <h3>Estratégia</h3>
+                        <object data="psychology_white.svg" type="image/svg+xml"></object>
+                        <button>Votar</button>
+                    </div>
                 </div>
             </div>
         </div>
 
         <div class="footer">
-            @Desenvolvido por AAAA
+            @Desenvolvido por Ewwnder
         </div>
 
     </div>
