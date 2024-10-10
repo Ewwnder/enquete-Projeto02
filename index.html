@@ -4,65 +4,132 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto 02 - Enquete de Games</title>
+    <style>
+            
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #CCCCCC;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 800px;
+            
+            margin: auto;
+            background-color: #200D25;
+            color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .title {
+            font-size: 32px;
+            font-weight: bold;
+            color: #DEBC23;
+        }
+
+        .description {
+            margin: 20px 0;
+            padding: 5px ;
+            font-size: 16px;
+        }
+
+        .form-title {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .input {
+            width: 80%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: none;
+        }
+
+        .options {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+            font-size: 18px;
+        }
+
+        .option {
+            background-color: #4873F2;
+            padding: 20px;
+            border-radius: 10px;
+            width: 25%;
+        }
+
+        button {
+            background-color: #1D0C20;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .footer {
+            margin-top: 20px;
+            font-size: 12px;
+            color: #FFF;
+        }
+    </style>
 </head>
 <body>
 
-    <div>
+    <div class="container">
 
-    <div>
-        GAMES LOVERS ENQUETE
-    </div>
-    
-    <div>
-
-    <div>
-        Estamos escolhendo nessa enquete os melhores estilos de jogos entre os afixionados por video games. Participe da nossa enquete e escolha entre os três finalistas!
-    </div>
-
-    <div>
-        A sua escolha é muito importante para nós.
-    </div>
-
-    <div>
-        No final da enquete iremos sortear um brinde entre os participantes.
-    </div>
-
-    <div>
-        @Desenvolvido por XXX
-    </div>
-
-
-    </div>
-
-    </div>
-
-    <div>
-        <div>
-            Digite os seus dados e escolha entre os três finalistas!
+        <div class="title">
+            GAMES LOVERS ENQUETE
+        </div>
+        
+        <div class="description">
+            <div>
+                Estamos escolhendo nessa enquete os melhores estilos de jogos entre os afixionados por video games. Participe da nossa enquete e escolha entre os três finalistas!
+            </div>
+            <div>
+                A sua escolha é muito importante para nós.
+            </div>
+            <div>
+                No final da enquete iremos sortear um brinde entre os participantes.
+            </div>
         </div>
 
-        <input type="text" placeholder="Digite seu nome:"/>
-        <input type="email" placeholder="Digite seu email:" />
-
-        <div>
-            <div>
-                Esportes
-
-                <button>Votar</button>
+        <div class="form">
+            <div class="form-title">
+                Digite os seus dados e escolha entre os três finalistas!
             </div>
 
-            <div>
-                Simulação
+            <input type="text" placeholder="Digite seu nome:" class="input"/>
+            <input type="email" placeholder="Digite seu email:" class="input"/>
 
-                <button>Votar</button>
-            </div>
+            <div class="options">
+                <div class="option">
+                    Esportes
+                    <button>Votar</button>
+                </div>
 
-            <div>
-                Estratégia
+                <div class="option">
+                    Simulação
+                    <button>Votar</button>
+                </div>
 
-                <button>Votar</button>
+                <div class="option">
+                    Estratégia
+                    <button>Votar</button>
+                </div>
             </div>
         </div>
+
+        <div class="footer">
+            @Desenvolvido por AAAA
+        </div>
+
     </div>
+
 </body>
 </html>
