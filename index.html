@@ -16,7 +16,7 @@
         }
 
         .container {
-            width: 80%;
+            max-width: 800px;
             margin: 0 auto;
             background: linear-gradient(to bottom, #210D25, #631E6F);
             color: #fff;
@@ -36,11 +36,11 @@
         .description div {
             margin: 0;
             padding: 5px 0;
-            font-size: 14px;
+            font-size: 18px;
         }
 
         .form-title {
-            font-size: 25px;
+            font-size: 28px;
             margin-top: 20px;
             background: linear-gradient(to bottom, #591C63, #1F0D22);
             padding: 10px;
@@ -48,8 +48,8 @@
         }
 
         .input {
-            width: 80%;
-            padding: 10px;  
+            width: 70%;
+            padding: 10px 0px;  
             margin-top: 20px;
             margin-bottom: 5px;
             border-radius: 5px;
@@ -63,17 +63,19 @@
 
         .options {
             display: flex;
-            justify-content: space-around;
+            justify-content: space-between;
             margin-top: 20px;
+            flex-wrap: wrap;
         }
 
         .option {
             background: linear-gradient(to bottom, #2638DB, #342A89);
             padding: 10px;
             border-radius: 10px;
-            width: 25%;
+            width: 30%;
             text-align: center;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin-bottom: 10px;
         }
 
         .inner-option {
@@ -96,14 +98,15 @@
         button {
             background-color: #1D0C20;
             color: #fff;
-            padding: 15px 30px;
+            padding: 15px;
             border: none;
             border-radius: 5px;
             cursor: pointer;
             margin-top: 10px;
+            width: 60%;
         }
 
-        button:hover{
+        button:hover {
             background-color: #2e2430;
         }
 
@@ -111,6 +114,50 @@
             margin-top: 10px;
             font-size: 12px;
             color: #FFF;
+        }
+
+        @media screen and (max-width: 500px) {
+            .container {
+                width: 95%;
+                padding: 10px;
+            }
+
+            .title {
+                font-size: 20px;
+            }
+
+            .form-title {
+                font-size: 18px;
+            }
+
+            .input {
+                width: 100%;
+            }
+
+            .options {
+                flex-direction: column; 
+                align-items: center;
+            }
+
+            .option {
+                width: 90%;
+                margin-bottom: 20px;
+            }
+
+            object {
+                width: 80px;
+                height: 80px;
+            }
+
+            button {
+                padding: 10px 20px;
+                width: 100%; 
+            }
+
+            .footer {
+                font-size: 10px;
+                margin-top: 5px;
+            }
         }
     </style>
 </head>
